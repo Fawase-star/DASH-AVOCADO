@@ -28,6 +28,7 @@ app.layout = html.Div([
     dash.page_container
 ])
 
+import pages.page1_cb
+
 if __name__ == "__main__":
     app.run(debug=True) 
-    
