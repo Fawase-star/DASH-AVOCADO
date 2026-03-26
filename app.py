@@ -29,6 +29,7 @@ app.layout = html.Div([
 ])
 
 import pages.page1_cb
+import pages.page2_cb 
 
 if __name__ == "__main__":
     app.run(debug=True) 
