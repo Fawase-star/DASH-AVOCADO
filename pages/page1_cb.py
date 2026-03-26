@@ -15,4 +15,4 @@ def update_graph(region):
         x="Date", y="Total Volume",
         title=f"Quantités vendues - {region}"
     )
-    return fig 
+    return fig   
