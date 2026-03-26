@@ -12,7 +12,7 @@ app.title = "Avocado Dashboard"
 
 navbar = dbc.NavbarSimple(
     children=[
-        dbc.NavItem(dbc.NavLink("Comparaison entre région", href="/compare")),
+        dbc.NavItem(dbc.NavLink("Comparaison entre région", href="/")),
         dbc.NavItem(dbc.NavLink("Affichage des données", href="/table")),
         dbc.NavItem(dbc.NavLink("Aide en ligne", href="/markdown")),
     ],

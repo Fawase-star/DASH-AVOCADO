@@ -18,19 +18,23 @@ layout = dbc.Container([
     dbc.Card([
         dbc.CardHeader(html.H4("Présentation de Dash")),
         dbc.CardBody([
-            dbc.Accordion([
-                dbc.AccordionItem([
-                    dcc.Markdown(contenu1)
-                ], title="La Page"),
-
-                dbc.AccordionItem([
-                    dcc.Markdown(contenu2)
-                ], title="Layout en Dash"),
-
-                dbc.AccordionItem([
-                    dcc.Markdown(contenu3)
-                ], title="Callback en Dash"),
-            ], start_collapsed=True)
+            dbc.Tabs([
+                dbc.Tab(
+                    dcc.Markdown(contenu1),
+                    label="Accueil",
+                    tab_id="tab-1"
+                ),
+                dbc.Tab(
+                    dcc.Markdown(contenu2),
+                    label="Layout",
+                    tab_id="tab-2"
+                ),
+                dbc.Tab(
+                    dcc.Markdown(contenu3),
+                    label="CallBack",
+                    tab_id="tab-3"
+                ),
+            ], active_tab="tab-1")
         ])
     ], className="mt-4")
-], fluid=True, className="mt-3")
+], fluid=True, className="mt-3") 
